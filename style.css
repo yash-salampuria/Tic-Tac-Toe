@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #112222;
+    z-index: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff1b;
+    z-index: 0;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 180px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #102d28;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal p {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.modal button {
+    height: 40px;
+    width: 120px;
+    padding: 8px 12px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700 !important;
+    outline: none;
+    background-color: #2a7a6e;
+    border-width: 0;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    font-weight: 600;
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 650px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -1;
+    /* background-color: #ffffff1a; */
+}
+
+.hidden {
+    display: none;
+}
+
+.container h1 {
+    color: #e5e5e5;
+    font-size: 35px;
+    margin-bottom: -5px;
+}
+
+.container p {
+    color: #FF6699;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.game {
+    height: 530px;
+    width: 540px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgba(255, 127, 80, 0.146); */
+}
+
+.game .tile {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+    background-color: #203e4a;
+    border-radius: 11px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.color-x {
+    color: #c3f6f6;
+}
+
+.color-o {
+    color: #FFFFCC;
+}
+
+.game .tile:hover {
+    background-color: #2b4e5bf1;
+}
